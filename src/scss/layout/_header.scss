@@ -1,3 +1,43 @@
-.header__menu{
-    background-color: blue;
+.header{
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: $color-tittle-header;
+    &__menu{
+    background-color: $color-menu-icon;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:0;
+    text-align: center;
+    padding-top: 10px;
+    
+    }
+    &__text{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        
+    }
+    &__text-tittle{
+        text-transform: uppercase;
+        
+    }
+    &__text-content{
+        text-transform: capitalize;
+    }
+   
+}
+.scroll{
+    background-color: $backgroung-color-main;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    
+    
 }
