@@ -1,80 +1,144 @@
-.main{
-    color: $color-main-text;
-    background-color: $backgroung-color-main;
-    &__section1{
-        width: 100%;
-        height: 376px;
-        padding:30px 15px 45px;
-
+.main {
+  color: $color-main-text;
+  background-color: $backgroung-color-main;
+  &__section1 {
+    width: 100%;
+    height: 376px;
+    padding: 30px 15px 45px;
+    @media (min-width: 768px) {
+      height: 330px;
+      padding: 30px 39px 60px;
     }
-    &__section1-small{
-        text-transform: capitalize;
-        color: $color-small;
-        font-size: 15px;
+    @media (min-width: 1024px) {
+      width: 1280px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 275px;
     }
-    &__section1-title{
-        text-transform: capitalize;
-        padding-top: 20px;
-        padding-right: 15px;
-        font-size: 25px;
-    }
-    &__section1-text{
-        padding-top:20px;
-        font-size: 18px;
-        letter-spacing: normal;
-        line-height: 1.70;
-    }
-    &__section2{
-        width: 100%;
-        height: 624px;
-        background-color: $background-color-articles;
-        display: grid;
-        text-align: center;
-    }
-    &__section2-title{
-        padding-top: 30px;
-        height: 10px;
-        text-transform: capitalize;
-        font-size: 25px;
-    }
-    &__section2-article-title{
-       padding-top: 0px;
-       font-size: 18px;
-       padding-bottom: 10px;
-    }
-    &__section2-article-text{
-       padding-right: 70px;
-       padding-left: 70px;
-        font-size: 18px;
-        line-height: 1.60;
-        letter-spacing: normal;
-
-    }
-    
-}
-.button-go{
-    margin-top: 20px;
-    width: 80px;
-    height: 50px;
-    border-radius: 28px;
-    border: solid 3px $color-button;
+  }
+  &__section1-small {
     text-transform: capitalize;
-    background-color: $backgroung-color-main;
-    color: $color-button;
-    font-size: 20px;
+    color: $color-small;
+    font-size: 15px;
+    @media (min-width: 1024px) {
+      width: 360px;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+  &__section1-title {
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-right: 15px;
+    font-size: 25px;
+    @media (min-width: 768px) {
+      font-size: 27px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 32px;
+    }
+  }
+  &__section1-text {
+    padding-top: 20px;
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 1.7;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+    @media (min-width: 1024px) {
+      margin-right: 275px;
+      
+    }
+  }
+  &__section2 {
+    width: 100%;
+    height: 624px;
+    background-color: $background-color-articles;
+    display: grid;
     text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 45px;
+
+    @media (min-width: 768px) {
+      height: 400px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  &__section2-title {
+    padding-top: 30px;
+    height: 10px;
+    text-transform: capitalize;
+    font-size: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 26px;
+      grid-row: 1;
+      grid-column: 1/4;
+    }
+
+    @media (min-width:1024px) {
+        font-size:32px
+    }
+  }
+  &__section2-article-title {
+    padding-top: 0px;
+    font-size: 18px;
+    padding-bottom: 10px;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 26px;
+        
+    }
+  }
+  &__section2-article-text {
+    padding-right: 70px;
+    padding-left: 70px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: normal;
+    // en el enunciado especificada 20px, me parecia que quedaba mejor a 18px
+    /*@media (min-width:768px) {
+        font-size:20px;
+        
+    }*/
+    @media (min-width:1024px) {
+        font-size: 20px;
+    }
+  }
 }
-.button-more{
-    margin-left: 90px;
-    margin-right: 90px;
-    /*margin-bottom: 20px;*/
-    width: 190px;
-    height: 50px;
-    background-color: $color-button;
-    text-align: center;
-    font-size: 20px;
-    color: $color-tittle-header;
-    border-radius: 28px;
-    border-color: $color-button;
-    
+.button-go {
+  margin-top: 20px;
+  width: 91px;
+  height: 45px;
+  border-radius: 28px;
+  border: solid 3px $color-button;
+  text-transform: capitalize;
+  background-color: $backgroung-color-main;
+  color: $color-button;
+  font-size: 20px;
+  text-align: center;
+}
+.button-more {
+  margin-bottom: 60px;
+  width: 190px;
+  height: 50px;
+  background-color: $color-button;
+  text-align: center;
+  font-size: 20px;
+  color: $color-tittle-header;
+  border-radius: 28px;
+  border-color: $color-button;
+  justify-self: center;
+
+  @media (min-width: 768px) {
+    grid-column: 2;
+  }
 }
