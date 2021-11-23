@@ -1,43 +1,70 @@
-.header{
-    background-image: url(../images/cover.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    color: $color-tittle-header;
-    &__menu{
+.header {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  color: $color-tittle-header;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  &__menu {
     background-color: $color-menu-icon;
     width: 40px;
     height: 40px;
     position: fixed;
-    top:0;
+    top: 0;
     text-align: center;
     padding-top: 10px;
-    
-    }
-    &__text{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        box-sizing: border-box;
-        
-    }
-    &__text-tittle{
-        text-transform: uppercase;
-        
-    }
-    &__text-content{
-        text-transform: capitalize;
-    }
-   
-}
-.ico-scroll{
-    background-color: $backgroung-color-main;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  }
+  .container {
     text-align: center;
-    padding-top: 10px;
-    
-    
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    @media (min-width:1024px){
+        transform: translateY(-50px);
+    }
+  }
+  &__text-tittle {
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateY(250px);
+    font-size: 45px;
+    @media (min-width: 768px) {
+        font-size:80px;
+        line-height: 1.30;
+        width: 600px;
+    }
+    @media (min-width:1024px) {
+        font-size: 100px;
+        line-height: 1.40;
+        width: 730px;
+        
+    }
+  }
+  &__text-content {
+    text-transform: capitalize;
+    transform: translateY(270px);
+    font-size: 16px;
+    @media (min-width:768px){
+        font-size: 24px;
+    }
+  }
+&__ico-scroll {
+  background-color: $backgroung-color-main;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(280px);
+  
+  
 }
+}
+

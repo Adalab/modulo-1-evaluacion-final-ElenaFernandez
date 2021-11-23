@@ -1,1 +1,72 @@
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: $background-footer;
+  color: $color-tittle-header;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 
+  &__container{
+    width: 73px;
+    height: 150px;
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style: none;
+    
+  }
+  .list-type{
+      list-style: none;
+  }
+
+    .menu-list {
+     text-align: center;
+      list-style-type: none;
+      text-decoration: none;
+      color: $color-tittle-header;
+      line-height: 1.60;
+    }
+
+    &__container1{
+        width: 147px;
+        height: 90px;
+        text-transform: uppercase;
+        font-size: 16px;
+        
+    }
+    .socialmedia-list{
+        text-align: center;
+       list-style-type: none;
+        text-decoration: none;
+        color: $color-tittle-header;
+        line-height: 1.60;
+
+    }
+    .advertise{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .copy{
+        padding-bottom: 10px;
+    }
+  
+}
+
+.ico-arrow{
+    background-color: $backgroung-color-main;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 28px;
+    padding-top: 10px;
+    position: relative;
+    top: -40px;
+}
+.heart{
+    color: red;
+
+}
