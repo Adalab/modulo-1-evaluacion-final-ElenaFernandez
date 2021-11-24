@@ -5,6 +5,7 @@
   height: 100vh;
   color: $color-tittle-header;
   box-sizing: border-box;
+  
   &__menu {
     background-color: $color-menu-icon;
     width: 40px;
@@ -26,10 +27,11 @@
       transform: translateY(-50px);
     }
   }
+  
   &__text-tittle {
     text-transform: uppercase;
     text-align: center;
-    transform: translateY(500px);
+    transform: translateY(600px);
     font-size: 45px;
     width: 290px;
     height: 110px;
@@ -39,22 +41,24 @@
       width: 600px;
     }
     @media (min-width: 1024px) {
-      font-size: 90px;
+      font-size: 80px;
       line-height: 1.4;
       width: 730px;
     }
   }
+  
   &__text-content {
     text-transform: capitalize;
-    transform: translateY(520px);
+    transform: translateY(620px);
     font-size: 16px;
     @media (min-width: 768px) {
       font-size: 24px;
     }
     @media (min-width: 1024px) {
-      transform: translateY(650px);
+      transform: translateY(700px);
     }
   }
+  
   &__ico-scroll {
     background-color: $backgroung-color-main;
     width: 40px;
@@ -64,10 +68,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(530px);
+    transform: translateY(630px);
     transition: color ease 5s;
+    
     @media (min-width: 1024px) {
-      transform: translateY(680px);
+      transform: translateY(710px);
     }
   }
 }

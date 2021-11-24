@@ -1,6 +1,7 @@
 .main {
   color: $color-main-text;
   background-color: $backgroung-color-main;
+  
   &__section1 {
     width: 100%;
     height: 376px;
@@ -18,6 +19,7 @@
       padding-left: 275px;
     }
   }
+  
   &__section1-small {
     text-transform: capitalize;
     color: $color-small;
@@ -28,6 +30,7 @@
       font-size: 16px;
     }
   }
+  
   &__section1-title {
     text-transform: capitalize;
     padding-top: 20px;
@@ -40,6 +43,7 @@
       font-size: 32px;
     }
   }
+  
   &__section1-text {
     padding-top: 20px;
     font-size: 18px;
@@ -50,9 +54,9 @@
     }
     @media (min-width: 1024px) {
       margin-right: 275px;
-      
     }
   }
+  
   &__section2 {
     width: 100%;
     height: 624px;
@@ -69,6 +73,7 @@
       grid-template-rows: repeat(3, 1fr);
     }
   }
+  
   &__section2-title {
     padding-top: 30px;
     height: 10px;
@@ -95,8 +100,7 @@
     }
     @media (min-width: 1024px) {
         font-size: 26px;
-        
-    }
+      }
   }
   &__section2-article-text {
     padding-right: 70px;
@@ -125,9 +129,9 @@
   color: $color-button;
   font-size: 20px;
   text-align: center;
+  transition-duration: 1s;
   &:hover{
     background-color: $color-main-text;
-    
   }
 }
   
