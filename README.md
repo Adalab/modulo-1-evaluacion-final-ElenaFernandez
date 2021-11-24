@@ -11,7 +11,7 @@ In the exercise, they asked us several requirements that we had to meet:
 - Use transitions.
 An in adittion, we can use also animations in CSS.
 
-Here you hve the direction of my web page.
+Here you have the direction of my web page.
 [@ElenaFernandez](http://beta.adalab.es/modulo-1-evaluacion-final-ElenaFernandez/)
 
 
