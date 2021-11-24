@@ -105,12 +105,15 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
      @keyframes arrow {
-       from{
+       0% {
          background-color: $backgroung-color-main;
        }
-       to{
+       50%{
          background-color: $color-small;
        }
+       100%{
+        background-color: $backgroung-color-main;
+      }
       }
 
   @media (min-width: 768px) {
