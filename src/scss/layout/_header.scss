@@ -55,6 +55,7 @@
     font-family: $font-main;
     @media (min-width: 768px) {
       font-size: 24px;
+      transform: translateY(650px);
     }
     @media (min-width: 1024px) {
       transform: translateY(700px);
@@ -72,6 +73,10 @@
     align-items: center;
     transform: translateY(630px);
     transition: color ease 5s;
+    @media (min-width:768px) {
+      transform: translateY(670px);
+      
+    }
     
     @media (min-width: 1024px) {
       transform: translateY(710px);
